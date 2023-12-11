@@ -1,0 +1,24 @@
+Download and install VSCode
+
+
+create a html file
+
+Vscode shortcuts
+================
+1.   !              HTML 5 STRUCTURE
+2.  img              image tag
+3.  button*2         creates 2 buttons
+4.  button.btn.btn-success{Success Button}
+5.  table>tbody>tr*20>td*5{Data-$}    Table with 20 rows, 5 cols
+
+
+to open the html file in browser
+================================
+1. install vscode extension - 
+   a. open in browser (alt+b  /  alt+shift+b)
+   b. live server
+
+HTML - content of a webpage
+CSS - for styling
+Bootstrap - Responsiveness + pre-defined components-table,carousel,modal,card
+Javascript - behaviour of a webpage
