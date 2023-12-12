@@ -1,0 +1,22 @@
+CSS
+====
+1. inline     (inside tag , style attribute)
+   the css needs to be repeated for every element
+   Element Level CSS
+2. internal   (inside Head section of HTML file, <style>)
+   The Css needs to be repeated for every HTML file
+   File level CSS
+3. external   (in a different css file, link that css to HTML file)
+   <link rel="stylesheet" href="style.css">
+   Project Level CSS
+
+
+Javascript
+===========
+1. internal    (script tag)
+   Page level JavaScript
+2. external    (separate JS file, include in HTML)
+   <script src="./addition.js"></script>
+
+
+Q. What is the best place to include JavaScript <head> / <body>

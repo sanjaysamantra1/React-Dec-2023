@@ -1,0 +1,29 @@
+What is ReactJS
+===============
+-React is a JavaScript library for building user interfaces
+
+
+Framework										Library
+=========================================================================
+-group of libraries to make your work easier	-performs specific, well-defined operations
+-provides ready to use tools,standards			-provides reusable functions for our code
+ templates for fast application development
+-cann't be easily replaceable 					-can be easily replaceable by another
+-angular,vue									-jQuery,ReactJs,lodash,moment,chartJS
+-Hospital with full of doctors					-A doctor who specializes in one area 		
+
+
+
+		React						Angular
+===========================================================
+1. Library-2013					 1. Framework-2009
+2. Light-weight					 2. Heavy
+3. JSX + Javascript				 3. HTML + Typescript
+4. Uni-Directional				 4. two-way
+5. Virtual DOM					 5. Regular DOM
+
+6. Axios 				 		 6. HttpClientModule 
+7. No 		 					 7. Dependency Injection
+8. No							 8. Form Validation
+9. extra libraries needed		 9. No additional libraries
+10. UI heavy					 10. Functionality Heavy
