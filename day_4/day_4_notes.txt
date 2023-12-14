@@ -22,13 +22,3 @@ ECMASCRIPT -  is a standard for the scripting languages.
 https://en.wikipedia.org/wiki/ECMAScript_version_history
 
 
-
-	Javascript					 TypeScript
----------------------------------------------------------
-1.strongly typed-No				1.strongly typed-yes
-2.directly run on browser		2.not directly run on the browser
-3.interface-No					3.interface - Yes
-4.optional parameters-No		4.optional parameters-yes
-5.interpreted language			5.compiles the code
-6.errors at runtime				6.errors during the development time
-7.generics-no					7.generics-yes

@@ -1,0 +1,62 @@
+
+	Javascript					 TypeScript
+---------------------------------------------------------
+1.strongly typed-No				1.strongly typed-yes
+2.directly run on browser		2.not directly run on the browser
+3.interface-No					3.interface - Yes
+4.optional parameters-No		4.optional parameters-yes
+5.interpreted language			5.compiles the code
+6.errors at runtime				6.errors during the development time
+7.generics-no					7.generics-yes
+
+
+if we have typescript code how can we use inside html file
+===========================================================
+1. install typescript 
+   npm install typescript -g
+2. check if typescript is installed?
+   tsc -v
+3. compile & generate Javascript code 
+   tsc abc.ts  -->  js file gets generated
+   include the generated JS file in HTML
+
+
+
+datatypes:
+=========
+-Types of data we are dealing with.
+-JavaScript provides different data types to hold different types of values.
+-two types of data types : 
+	1.primitive  	(number,string,boolean,undefined,null,symbol,bigInt)
+	2.Non-primitive (object references - Object)
+
+
+-difference between primitives and non-primitives is that primitives are immutable and 
+ non-primitives are mutable.
+	var str = 'This is a string.';
+	str[1] = 'H'
+	console.log(str); // 'This is a string.'
+-Mutable values are those which can be modified after creation.
+-Immutable values are those which cannot be modified after creation.
+-primitives are compared by values whereas non-primitives are compared by references.
+-primitive value will always be exactly equal to another primitive with an equivalent value.
+    const first = "abc" + "def";
+	const second = "ab" + "cd" + "ef";
+	console.log(first === second); // true
+-equivalent non-primitive values will not result in values which are exactly equal.
+    const obj1 = { name: "sanjay" };
+	const obj2 = { name: "sanjay" };
+	console.log(obj1 === obj2); // false
+-'typeof' is used to check datatype of a value.
+
+
+  Primitive							Non-primitive/Complex
+  --------------					-------------------------
+  1. number							1. Object (Object & Array)
+  2. string								
+  3. boolean(true,false)
+  4. undefined(undefined)
+  5. null
+  6. symbol(ES-6)
+  7. bigint (const x = 2n ** 53n;)
+     appending n to the end of an integer literal
