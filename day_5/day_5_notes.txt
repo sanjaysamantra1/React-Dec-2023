@@ -60,3 +60,17 @@ datatypes:
   6. symbol(ES-6)
   7. bigint (const x = 2n ** 53n;)
      appending n to the end of an integer literal
+
+
+Q. How do we differentiate between Object & Array
+   let a = {};
+   let b = [];
+
+   console.log(typeof a)   // Object
+   console.log(typeof b)   // Object
+   
+   console.log(a instanceof Array);  //false
+   console.log(b instanceof Array);  //true
+
+   console.log(Array.isArray(a));  // true
+   console.log(Array.isArray(b));  // false

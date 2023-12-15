@@ -1,0 +1,33 @@
+null vs undefined
+------------------
+-undefined means "not initialized".it means a variable is declared but not initialized yet.
+-null means "the intentional absence of any object value". null is an assigned value. It means nothing.
+
+-A variable initialized with undefined means the variable has no value assigned.
+-Null means in future we will assign an object.
+
+-typeof undefined   - undefined
+ typeof null  - object
+
+ Q. typeof null   prints 'Object'
+    is 'null' non-primitive
+    Ans - No, null is primitive 
+
+Symbol 
+======
+-A 'symbol' represents a unique identifier.
+-Symbols are often used to add unique property keys to an object that won’t collide with keys.
+-create a symbol by calling the Symbol(), not by using new keyword.
+ let sym1 = Symbol()  // correct
+ let sym2 = new Symbol()  // TypeError
+-Even if we create many symbols with the same description, they are different values.
+ Symbol('foo') === Symbol('foo')  // false
+-Symbols allow us to create “hidden” properties of an object, 
+ that no other part of code can accidentally access or overwrite.
+-If we want to use a symbol in an object literal,we need square brackets around it.
+ let id = Symbol('User Id');
+ let user = {name:'sanjay',[id]:123}
+-Symbols are not enumerated,Symbols are skipped by for…in while we iterate object properties.
+-Symbols are not part of the Object.keys() or Object.getOwnPropertyNames()
+-Symbols assigned to an object can be accessed using the Object.getOwnPropertySymbols() method
+-Object.assign() copies both string and symbol properties.

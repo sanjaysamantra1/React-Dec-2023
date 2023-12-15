@@ -1,0 +1,24 @@
+<body>
+    <script>
+        // The key inside a JS object should be a string/Symbol
+        let user = {};
+        user['name'] = "Sachin";
+        user['address'] = { 'city': 'mumbai' };
+
+        var id = Symbol('User Id');
+        user[id] = 101;
+
+        console.log(user);
+
+
+        for (key in user) {
+            console.log(key, user[key])
+        }
+
+        let myKeys = Object.keys(user);
+        console.log(myKeys);
+
+        let mySymbols = Object.getOwnPropertySymbols(user);
+        console.log(mySymbols);
+    </script>
+</body>

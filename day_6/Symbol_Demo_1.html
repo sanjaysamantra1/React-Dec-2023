@@ -1,0 +1,16 @@
+<body>
+    <script>
+        // The key inside a JS object should be a string/Symbol
+        let user = {};
+        user['name'] = "Sachin";
+        user['address'] = { 'city': 'mumbai' };
+
+        var id = Symbol('User Id');
+        user[id] = 101;
+
+        var id2 = Symbol('User Id');
+        user[id2] = 'xyz';
+
+        console.log(user)  
+    </script>
+</body>
