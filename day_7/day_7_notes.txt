@@ -1,0 +1,40 @@
+To run any JS code , we dont need any software
+- browser is enough to run JS code
+
+- Inside Every Browser , JS engine is there 
+- JS engine helps to execute JS code
+
+Chrome : V8 engine
+Firefox : Spidermonkey engine
+IE : Chakra engine
+safari  : javascript Core
+
+
+
+How Javascript Works
+====================
+-When JavaScript engine executes a script, it creates N execution contexts.
+-Execution context is the environment within which the current code is being executed.
+-Each execution context has two phases: 
+	1. creation phase. (Allocates memory - variables & functions and assign 'undefined' to variables)
+	2. execution phase. (Code gets Executed - assign values to variables & method invocation)
+-When a script executes for the first time,JavaScript engine creates a 'Global Execution Context' and pushes to callstack.
+-For every function call,JavaScript engine creates a new Function Execution Context and that gets added to callstack.
+
+https://www.youtube.com/watch?v=iLWTnMzWtj4&t=1044s
+https://www.jsv9000.app/
+
+
+
+heap - This is the area where variables and methods are stored physically.
+Stack  - also called  callstack / ExecutionStack
+         This is the place where functions will be places one above other,
+         the top 1 gets excuted first then top-1,top-2 and so on
+Note : CallBack functions cann't be placed inside callstack directly,
+       they will have to wait in callback queue & they will go to stack only when normal functions are executed
+
+CallbackQueue - This is the queue which maintains all the callbacks
+Task Queue - setTimeout(),setInterval() related callbacks
+Microtask Queue - Promise() related callbacks
+
+EventLoop - EventLoop keeps an eye on callstack & callback queue, when it find the callstack free , it pulls a callback function from callback queue and assigns it to call stack for execution.

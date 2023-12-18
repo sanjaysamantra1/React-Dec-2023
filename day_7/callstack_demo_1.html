@@ -1,0 +1,19 @@
+<body>
+    <Script>
+        function f3() {
+            console.log('F3 started');
+            console.log('F3 ended');
+        }
+        function f2() {
+            console.log('F2 started');
+            f3();
+            console.log('F2 ended');
+        }
+        function f1() {
+            console.log('F1 started');
+            f2();
+            console.log('F1 ended');
+        }
+        f1();
+    </Script>
+</body>
