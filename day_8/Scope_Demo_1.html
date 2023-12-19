@@ -1,0 +1,17 @@
+<script>
+    var a = 10;  // Global
+    console.log('Global: ' + a); // 10
+
+    function f1() {
+        var a = 20;
+        console.log('function ', a);
+
+        if (true) {
+            var a = 30;
+            console.log('block ', a);
+        }
+
+        console.log('function-2 ', a); // 
+    }
+    f1();
+</script>
