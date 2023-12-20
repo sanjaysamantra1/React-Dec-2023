@@ -1,0 +1,18 @@
+<script>
+    function Test() {
+        // console.log('Line-3 ', a); // undefined
+        let a = 10;
+        console.log('Line-5 ', a); // 10
+
+        if (true) {
+            // console.log('Line-8 ', a) // 10 / undefined
+            let a = 15;
+            console.log('Line-10 ', a); // 15
+        }
+        console.log('Line-12 ', a);  // 10 / 15
+    }
+    Test();
+
+    // var  - undefined 10 10 15 15
+    // let  - error 10 error 15 10
+</script>

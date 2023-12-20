@@ -1,0 +1,52 @@
+Hoisting:
+=========
+-The process of assigning variable declarations a default value of 'undefined' during the creation phase is called Hoisting.
+-In hoisting, the variable and function declarations are put into memory during the	compile/creation phase before code execution phase.
+-All variables (var,let,const) are hoisted but only 'var' variables are usable/reachable before initialization.
+-let/const variables are not reachable/usable before initialization (Temporal Dead Zone)
+
+variable scope: 
+==============
+-Scope is a certain section/region of the program where a defined variable can have its existence and can be recognized, beyond that it can’t be accessed.
+-Scope determines the visibility and accessibility of a variable.
+-Every variable will have either 1 of the below 3 scopes.
+	1. global
+	2. function/Local
+	3. block
+	
+global scope:
+--------------
+-variables declared outside function.
+-these are accesible/visible throughout the script by any function.
+
+function:
+--------
+-declared inside a function/function arguements.
+-can be used only inside that function.
+
+block scope:
+------------
+-declared inside a block(if,else,try,catch)
+-visible only inside a block
+
+N.P-Scope of the variables declared without var/let/const become global irrespective of 
+    where it is declared.
+
+
+Scope chain
+===========
+-While resolving a variable, the block first  tries to find it within the own scope.
+-If the variable cannot be found in its own scope it will climb up the scope chain and look for the variable name in the environment where the function was defined.
+-If the variable cannot be found there, it will climb up the scope chain and will go till global scope to resolve the variable.
+
+
+Variable Shadowing
+==================
+-when a variable is declared in a certain scope having the same name defined on its
+ outer scope and when we call the variable from the inner scope, the value assigned to
+ the variable in the inner scope is the value that will be stored in the variable in 
+ the memory space. This is known as Shadowing.
+ 
+-while shadowing a variable, it should not cross the boundary of the scope, i.e. we can 
+ shadow var variable by let variable but cannot do the opposite. So, if we try to shadow 
+ let/const variable by var variable, it is known as Illegal Shadowing and it will give the error as “variable is already defined.” 

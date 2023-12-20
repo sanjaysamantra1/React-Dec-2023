@@ -1,0 +1,20 @@
+<script>
+    function varDemo() {
+        if (true) {
+            var b = 20; 
+            //even though it is declared inside a block, it is function scoped
+            console.log('block', b)
+        }
+        console.log('function', b)
+    }
+    varDemo();
+
+    function letDemo() {
+        if (true) {
+            let a = 10; // block 
+            console.log('block', a)
+        }
+        console.log('function', a)
+    }
+    letDemo();
+</script>

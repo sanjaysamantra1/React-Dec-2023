@@ -1,0 +1,25 @@
+<script>
+    var a = 10;
+    let b = 20;
+    const c = 30;
+
+    function f1() {
+        var d = 40;
+        e = 50;
+        console.log('inside f1..', a, b, c, d, e);
+        // console.log('inside f1..', f);
+    }
+    function f2() {
+        let f = 60;
+        console.log('inside f2..', a, b, c, f);
+        console.log('inside f2..', e);
+    }
+    f1();
+    f2();
+
+    console.log('Global a-', a)
+    console.log('Global b-', b)
+    console.log('Global c-', c)
+
+// Note: when a variable is declared without var/let/const, that's a global variable
+</script>
