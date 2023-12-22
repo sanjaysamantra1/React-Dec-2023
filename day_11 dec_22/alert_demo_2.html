@@ -1,0 +1,13 @@
+<script>
+    console.log(this);
+
+    window.alert('Hiiiii');
+    this.alert('Hellloooo');
+
+    function test() {
+        'use strict';
+        window.alert('Good Evening'); // Yes
+        this.alert('Good Evening'); // No
+    }
+    test();
+</script>

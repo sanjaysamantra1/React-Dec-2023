@@ -1,0 +1,36 @@
+dialog boxes/popup boxes
+========================
+the below functions are from 'window' object
+1.  alert() - display Message  
+			 (message + ok)
+2.  confirm()- User Confirmation 
+			  ( message + ok-true,cancel-false)
+3.  prompt()- Collect User Input  
+			  (message + inputBox + ok,cancel)
+
+
+
+Note: in Javascript there are may pre-defined objects available
+     window , document , console , Math, Array
+
+
+Most Used Methods In Javascript
+===============================
+1. window.alert() - display Message
+2. document.write() - write something on the page body
+3. console.log() - log something on the console
+
+Note: window object methods can be directly called
+
+
+
+console
+=======
+log()
+warn()
+error()
+assert()
+table()
+time()
+timeEnd()
+trace()
