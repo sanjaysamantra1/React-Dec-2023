@@ -1,0 +1,40 @@
+Functions 
+=========
+-function is a block of code/statements designed to perform a particular task.
+-function is executed only when that gets invoked/called.
+-function is defined with the function keyword, followed by a name, followed by parentheses ().
+-The code to be executed(function body), by the function, is placed inside curly brackets: {}
+-Function parameters are listed inside the parentheses () in the function definition.
+-Function arguments are the values received by the function when it is invoked.
+-Inside the function, the arguments (the parameters) behave as local variables.
+
+1. pre-defined (alert(),prompt(),confirm(),max(),min(),sqrt(),cbrt())
+	already written, we are just using them
+2. user-defined
+	we have to write,and we will use them
+   
+   a. function declaration (named function)
+   b. function expression(anonymous)
+   c. self invoked ( IIFE- Immediately Invoked Function Expression)
+   d. arrow function (ES - 6)(2015)
+  
+
+Note:
+=====
+Parameter: is the variable in the function declaration. 
+		   It is part of the function signature when you create it.
+Argument: is the actual value of the variable being passed to the function when it is called.
+
+
+
+Function Declaration			Function Expression
+--------------------------------------------------------
+1. Named						1. Anonymous
+2. Hoisting - yes				2. Hoisting - No
+3. creation phase(parse)		3. execution phase (run)
+
+   
+-A Function Expression is created when the execution reaches it and is usable only from that moment.
+-A Function Declaration can be called before it is defined.
+-function declarations are parsed before their execution. 
+ function expressions are parsed only when the script engine encounters it during execution.
