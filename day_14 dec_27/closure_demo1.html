@@ -1,0 +1,16 @@
+<script>
+    function test() {
+        let a = 10;
+
+        function testInner() {
+            let b = 20;
+            console.log(a, b)
+        }
+        testInner();
+
+        console.dir(testInner);
+    }
+    test();
+
+    console.dir(test);
+</script>

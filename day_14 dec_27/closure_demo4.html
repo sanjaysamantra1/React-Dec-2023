@@ -1,0 +1,24 @@
+<body>
+    <button onclick="increment()">Increment</button>
+    <button onclick="sayHello()">sayHello</button>
+
+    <h1>You have clicked <span id="spanCount">0</span> Times</h1>
+
+    <script>
+        function initializeCount() {
+            var count = 0;
+
+            return function () {
+                ++count;
+                document.getElementById("spanCount").innerHTML = count;
+            }
+        }
+        let increment = initializeCount();
+        console.log(increment);
+
+        function sayHello() {
+            console.log('Hellooooooo');
+            // ++count;
+        }
+    </script>
+</body>
