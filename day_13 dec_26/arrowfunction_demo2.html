@@ -1,0 +1,18 @@
+<script>
+    let obj = {
+        a: 10,
+        b: 20,
+        add: function () {
+            console.log(this.a + this.b); // 30
+            // this = how it is called
+            // this = obj
+        },
+        mul: () => {
+            console.log(this.a * this.b); // NaN
+            // this = where it is declared
+            // this = window
+        }
+    }
+    obj.add();
+    obj.mul();
+</script>

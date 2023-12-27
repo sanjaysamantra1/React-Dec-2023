@@ -1,0 +1,19 @@
+<body>
+    <button id="btn1">Btn-1</button>
+    <button id="btn2">Btn-2</button>
+    <button id="btn3">Btn-3</button>
+
+</body>
+
+<script>
+    // Give me 1 example where Arrow function cann't be used
+    // Normal Function : this =  dynamic (this value changes from the place where it is called)  
+
+    function f1() {
+        console.log(this); //  this = btn1 / btn2 / btn3
+        this.style.backgroundColor = 'red'
+    }
+    document.getElementById("btn1").addEventListener('click', f1);
+    document.getElementById("btn2").addEventListener('click', f1);
+    document.getElementById("btn3").addEventListener('click', f1);
+</script>

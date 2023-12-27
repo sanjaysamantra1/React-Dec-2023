@@ -1,0 +1,23 @@
+<script>
+    let obj = {
+        a: 10,
+        b: 20,
+        add: function () {
+            console.log(this);
+            // this = obj
+
+            function sub() {
+                console.log(this);
+                // this = how it is called
+            }
+            sub();
+
+            let mul = () => {
+                console.log(this);
+                // this = where it is written
+            }
+            mul()
+        }
+    }
+    obj.add();
+</script>

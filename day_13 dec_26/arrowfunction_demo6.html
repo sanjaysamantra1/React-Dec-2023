@@ -1,0 +1,17 @@
+<script>
+    class Employee {
+        name = 'Sachin';
+        sal = 5000;
+
+        displayInfo1 = function () {
+            console.log('Info-1 ', this.name, this.sal);
+        }
+        displayInfo2 = () => {
+            console.log('Info-2 ', this.name, this.sal);
+        }
+
+    }
+    let emp1 = new Employee();
+    emp1.displayInfo1();
+    emp1.displayInfo2();
+</script>
