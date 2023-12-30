@@ -1,0 +1,8 @@
+function closure
+================
+-A closure is an inner function that has access to its outer function's variables even after the outer function's execution is completed.
+-A closure is the combination of a function bundled with the lexical environment within  which that function is declared.
+-a closure gives access to an outer function’s scope from an inner function.
+-closures are mainly used for - encapsulation , iterators  
+-closure = function + lexical-scope
+

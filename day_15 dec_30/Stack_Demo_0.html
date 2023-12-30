@@ -1,0 +1,19 @@
+<script>
+    let list = [];
+
+    function push(val){
+        list.push(val);
+    }
+    function pop(){
+        return list.pop();
+    }
+    function peek(){
+        return list[list.length - 1];
+    }
+    list.push(10);
+    list.push(20);
+    console.log(list)
+
+    list = [];
+    console.log(list)
+</script>
