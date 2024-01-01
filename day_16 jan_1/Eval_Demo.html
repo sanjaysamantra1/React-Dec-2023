@@ -1,0 +1,10 @@
+<script>
+    // eval() is not from string class, Its from Window
+    let str1 = '2+2';
+    let str2 = new String('2+3');
+    let str3 = str2.valueOf(); // converts object to Literal
+
+    console.log(eval(str1)); // 4
+    console.log(eval(str2)); // 2+3
+    console.log(eval(str3)); // 5
+</script>

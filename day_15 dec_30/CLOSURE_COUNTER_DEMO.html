@@ -7,9 +7,10 @@
 
     <script>
         const createCounter = function (init) {
-            let currentValue = init;
+            var currentValue = init;
 
             const increment = () => {
+                console.log(a)
                 ++currentValue;
                 document.getElementById("ValueSpan").innerHTML = currentValue;
             }
