@@ -1,0 +1,90 @@
+1. WAP to reverse a string
+	input:- 'sachin'
+	output:- 'nihcas'
+
+2. WAP to reverse words
+	input:- 'This is javascript class'
+	output:- 'class javascript is this'
+
+3. WAP to print the first non-repeated character in a string
+   input:- 'entertainment'
+   output:- r
+
+  let str = 'entertainment';
+  for(char of str){
+      if(str.indexOf(char) === str.lastIndexOf(char)){
+        console.log(char);
+        break;
+      }
+   }
+
+
+
+   
+4. WAP to print a string in title case
+	input:- 'this is javascript class'
+    output:- 'This Is Javascript Class'
+	
+5. WAP to find longest word in a sentence
+	input:- 'this is javascript class'
+    output:- javascript
+
+    let str = 'this is javascript class';  
+    let words = str.split(' ');
+    let longestWord = '';
+    for(word of words){
+    if(word.length > longestWord.length){
+        longestWord = word; // javascript
+    }
+    }
+    console.log(longestWord)
+	
+6. WAP to print Account number
+   input:- '12345678987'
+   output:- '12*******87'
+
+    let accNo = '12345678987';  
+    let maskedAccNo = accNo.slice(0,2)+'*******'+accNo.slice(-2)
+    console.log(accNo,maskedAccNo)
+   
+7. WAP to print Credit-card number
+   input:- '1111222233334444'
+   output:- '1111-2222-3333-4444'
+
+    let creditCard = '1111222233334444';
+    let arr = creditCard.match(/.{1,4}/g);
+    let result = arr.join('-');
+    console.log(result)
+   
+8. WAP to check if 2 strings are anagram or not
+	'listen' - 'silent'    anagram(every char of str1 should be there in str2)
+
+    function isAnagram(str1,str2){
+        if(str1.length !== str2.length){
+            return false;
+        }
+        let a = str1.split('').sort().join('');
+        let b = str2.split('').sort().join('');
+    
+        return a==b;
+    }
+    console.log(isAnagram('listen','silenT'));
+    console.log(isAnagram('apple','ball'));
+    console.log(isAnagram('triangle','integral'));
+	
+9. WAP to remove special character from a string
+   input:- 'hello@#hi&'
+   output:- 'hellohi'
+
+    let str = 'hello@#hi&'
+    let only_alphabets = str.replace(/[^\w]/g,'');
+    console.log(only_alphabets)
+   
+10. WAP to move all the special characters to the end of the string
+	input:- 'hello@#hi&'
+   output:- 'hellohi@#&'
+
+   let str = 'hello@#hi&'
+    let only_alphabets = str.replace(/[^\w]/g,'');
+    let only_special_chars = str.replace(/[\w]/g,'');
+    console.log(only_alphabets + only_special_chars)
