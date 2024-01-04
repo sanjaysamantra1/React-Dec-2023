@@ -19,7 +19,7 @@ var arr3 = new Array(10,20,30,40,50);
 
 properties: length , delete
 
-instance functions:    	at(),concat(),entries(),every(),fill(),filter(),find(),findLast(),findIndex(),flat(),
+instance functions: at(),concat(),entries(),every(),fill(),filter(),find(),findLast(),findIndex(),flat(),
 flatMap(),forEach(),includes(),indexOf(),join(),keys(),lastIndexOf(),map(),pop(),push()
 reduce(), reverse(), shift(),slice(),sort(),some(), splice(),unshift(),values()
 

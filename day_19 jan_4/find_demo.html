@@ -1,0 +1,16 @@
+<script>
+    let cars = ['tata', 'honda', 'maruti', 'hundai', 'honda', 'maruti'];
+
+    let res1 = cars.find((car) => {
+        return car === 'maruti';
+    });
+    console.log(res1);
+
+    let res2 = cars.findIndex((car) => car === 'maruti');
+    console.log(res2)
+
+    console.log(cars.indexOf('maruti'));
+
+    // indexOf() can be used with array of numbers/strings
+    // indexOf() can't be used with array of objects
+</script>

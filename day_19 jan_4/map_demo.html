@@ -1,0 +1,24 @@
+<script>
+    let arr1 = [10, 20, 30, 40, 50];
+    // map() is used to manipulate each element in the array, returns an array
+
+    /* let arr2 = [];
+    for (ele of arr1) {
+        ele = ele + 5;
+        arr2.push(ele);
+    } */
+
+    /*  let arr2 = arr1.map((ele)=>ele+5);
+     console.log(arr2); */
+
+    /* function increaseBy5(ele, ind) {
+        if (ind % 2 == 0) {
+            return ele + 5;
+        } else {
+            return ele;
+        }
+    } */
+    let arr2 = arr1.map((ele, ind) => ind % 2 === 0 ? ele + 5 : ele);
+    // map() HigherOrder , increaseBy5 is callback function
+    console.log(arr2)
+</script>

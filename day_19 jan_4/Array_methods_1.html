@@ -1,0 +1,28 @@
+<script>
+    let arr = [10, 20, 30, 40];
+
+    arr.push(50);
+    console.log(arr);
+
+    arr.pop();
+    console.log(arr);
+
+    arr.unshift(50);
+    console.log(arr);
+
+    arr.shift();
+    console.log(arr);
+
+    // arr.splice(ind,#elements to remove, elements to insert)
+    // arr.splice(1, 2, 25);
+    // console.log(arr); // 10, 25, 40
+
+    arr.splice(2, 0, 25)
+    console.log(arr);
+
+
+    let boys = ['Ram', 'hari'];
+    let girls = ['Geeta', 'Reena'];
+    let students = boys.concat(girls);
+    console.log(students);
+</script>

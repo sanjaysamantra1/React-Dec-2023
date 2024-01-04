@@ -1,0 +1,24 @@
+<script>
+    let arr1 = [20, 50, 10, 40, 30];
+    arr1.sort();
+    console.log(arr1);
+
+    let cars = ['tata', 'honda', 'maruti'];
+    cars.sort();
+    console.log(cars);
+
+    let arr2 = [9, 101, 102, 91, 95, 8, 7, 105];
+    arr2.sort();
+    console.log(arr2);
+
+    // sort() bydefault considers every element as a string element
+    // Note: How to perform Numeric sort
+    function sortByAsc(a,b){
+        return a-b;
+    }
+    function sortByDesc(a,b){
+        return b-a;
+    }
+    arr2.sort(sortByDesc);
+    console.log(arr2)
+</script>

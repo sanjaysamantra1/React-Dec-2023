@@ -1,0 +1,28 @@
+<script>
+    let employees = [
+        { eId: 101, name: 'sanjay', sal: 5000, gender: 'male' },
+        { eId: 104, name: 'geeta', sal: 8000, gender: 'female' },
+        { eId: 103, name: 'sameer', sal: 7000, gender: 'male' },
+        { eId: 102, name: 'sita', sal: 9000, gender: 'female' },
+        { eId: 105, name: 'deepak', sal: 8000, gender: 'male' },
+    ];
+    // display the employee data whose salary is 8000
+    let res1 = employees.find((emp) => emp.sal == 8000);
+    console.log(res1);
+
+    // display the index number of the employee whose salary is 8000
+    let res2 = employees.findIndex((emp) => emp.sal == 8000);
+    console.log(res2);
+
+    // display all the employees whose salary is 8000
+    let res3 = employees.filter((emp) => emp.sal == 8000);
+    console.log(res3);
+
+    // display the first male employee data
+    let res4 = employees.find((emp) => emp.gender == 'male');
+    console.log(res4);
+
+    // display all the  male employee data
+    let res5 = employees.filter((emp) => emp.gender == 'male');
+    console.log(res5);
+</script>
