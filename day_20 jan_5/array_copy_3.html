@@ -1,0 +1,13 @@
+<script>
+    let arr1 = [10, 20, [30, 40]];
+
+    let arr2 = arr1; // Address Copy
+
+    let arr3 = structuredClone(arr1); // value Copy (Deep copy)
+    arr3.push(50);
+    console.log(arr1, arr3);
+
+    arr3[2].push(45);
+    console.log(arr1, arr3);
+    // even Inner arrays are copied by value
+</script>
