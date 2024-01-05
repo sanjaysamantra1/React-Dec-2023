@@ -1,0 +1,13 @@
+<script>
+    let arr = [10, 20, 30, 40, 50];
+    // Find the sum of all the numbers in this array
+
+    /* let sum = 0;
+    for (ele of arr) {
+        sum = sum + ele;
+    }
+    console.log(sum) */
+
+    let sum = arr.reduce((sum, ele) => sum + ele);
+    console.log(sum)
+</script>

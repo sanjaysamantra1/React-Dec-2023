@@ -1,0 +1,13 @@
+<script>
+    let arr = [1, 2, 3, 4, [5, 6, 7, [8, [9, 10]]]];
+    console.log(arr, arr.length); // 5
+
+    let arr2 = arr.flat();// depth=1
+    console.log(arr2, arr2.length); // 8
+
+    let arr3 = arr.flat(2); // depth=2
+    console.log(arr3, arr3.length); // 9
+
+    let arr4 = arr.flat(Infinity); // flat to nth depth
+    console.log(arr4, arr4.length); // 10
+</script>
