@@ -1,0 +1,21 @@
+<script>
+    class Student {
+        constructor(roll, name) {
+            this.roll = roll;
+            this.name = name;
+            // this.course = 'ReactJS';
+            // this.trainer = 'Sanjay';
+        }
+    }
+    Student.prototype.course = 'ReactJS';
+    Student.prototype.trainer = 'Sanjay';
+
+    let std1 = new Student(101, 'Akash');
+    let std2 = new Student(102, 'Nirmal');
+    console.log(std1, std2);
+    console.log(std1.roll, std1.name, std1.course, std1.trainer);
+
+    std1.course = 'React';
+    console.log(std1.roll, std1.name, std1.course, std1.trainer);
+    console.log(std2.roll, std2.name, std2.course, std2.trainer);
+</script>
