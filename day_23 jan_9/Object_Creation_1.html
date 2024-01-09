@@ -1,0 +1,26 @@
+<script>
+    //  1. Object Literal
+    let obj1 = { a: 10, b: 20 };
+
+    // 2. Object create()
+    let obj2 = Object.create(obj1);
+
+    // 3. Object Class
+    let obj3 = new Object();
+
+    // 4. Class & Object
+    class Employee {
+        constructor(id, name, sal) {
+            this.id = id;
+            this.name = name;
+            this.sal = sal;
+        }
+    }
+    let emp1 = new Employee(101, 'Deepak', 8000);
+
+
+    console.log(obj1)
+    console.log(obj2)
+    console.log(obj3)
+    console.log(emp1)
+</script>

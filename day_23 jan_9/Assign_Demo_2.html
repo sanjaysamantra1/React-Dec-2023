@@ -1,0 +1,25 @@
+<script>
+    let obj1 = { a: 10, b: 20 };
+
+    let obj2 = obj1; // reference/Address copy 
+    obj2.a = 15;
+    console.log(obj1, obj2);
+
+    let obj3 = { a: 10, b: 20, c: { d: 40 } };
+    let obj4 = Object.assign({}, obj3); // Value Copy-shallow copy
+    // let obj4 = {...obj3} // Value Copy-shallow copy
+    obj4.a = 15;
+    obj4.b = 25;
+    obj4.c.d = 45;
+    console.log(obj3, obj4);
+    // Shallow copy : Only Top/1 level values are copied by Value
+    // but, Inner objects are copied by address
+
+    let obj5 = { a: 10, b: 20, c: { d: 40 } };
+    let obj6 = structuredClone(obj5); // value copy - Deep Copy
+    // Deep Copy : everything gets copied by value(even inner objects)
+    obj6.a = 15;
+    obj6.b = 25;
+    obj6.c.d = 45;
+    console.log(obj5, obj6); 
+</script>

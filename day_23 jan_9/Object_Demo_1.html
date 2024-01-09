@@ -1,0 +1,20 @@
+<script>
+    let user = { name: 'sachin', age: 35, add: 'mumbai' };
+    console.log(user.name);
+    console.log(user['age']);
+
+    let emp = { 'first name': 'sanjay', age: 40, sal: 5000 }
+    // 1. if the key contains a space, then use []
+    // console.log(emp.first name)
+    console.log(emp['first name']);
+
+    // 2. when the key is stored as a value in a variable
+    let a = 'age';
+    console.log(emp.a); // undefined
+    console.log(emp[a]); // 40
+
+    // while iterating object
+    for (key in emp) {
+        console.log(key+"======"+emp[key])
+    }
+</script>
