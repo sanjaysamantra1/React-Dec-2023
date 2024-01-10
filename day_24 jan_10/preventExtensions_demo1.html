@@ -1,0 +1,10 @@
+<script>
+    let obj1 = { x: 100, y: 200 };
+    Object.preventExtensions(obj1);
+    obj1.x = 150; // change value - Yes
+    obj1.y = 250; // change value - Yes
+    delete obj1.y; // delete a property - Yes
+    obj1.z = 300; // add a new property - No
+    console.log(obj1)
+    console.log(Object.isExtensible(obj1)); // true
+</script>

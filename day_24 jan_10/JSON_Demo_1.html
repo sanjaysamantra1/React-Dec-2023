@@ -1,0 +1,13 @@
+<script>
+    let user = { name: 'sachin', age: 40, add: 'mumbai' };
+    console.log(typeof user);
+    // objects cann't be stored in Session Storage/ Local Storage
+    // solution - convert object to string then store
+    let userStr = JSON.stringify(user);
+    console.log(userStr, typeof userStr);
+
+    // From String value each property value cann't be read
+    console.log(userStr.name)
+    let userObj = JSON.parse(userStr);
+    console.log(userObj.name, userObj.age);
+</script>

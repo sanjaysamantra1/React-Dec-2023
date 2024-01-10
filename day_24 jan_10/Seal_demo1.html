@@ -1,0 +1,18 @@
+<script>
+    let obj1 = { a: 10, b: 20 };
+    obj1.c = 30; // add a new property
+    delete obj1.b; //delete a property 
+    obj1.a = 15;  // change value
+    console.log(obj1)
+    console.log(Object.isSealed(obj1)); // false
+
+
+    let obj2 = { x: 100, y: 200 };
+    Object.seal(obj2);
+    obj2.x = 150; // change value - Yes
+    obj2.y = 250; // change value - Yes
+    delete obj2.y; // delete a property - No
+    obj2.z = 300; // add a new property - No
+    console.log(obj2)
+    console.log(Object.isSealed(obj2)); // true
+</script>
