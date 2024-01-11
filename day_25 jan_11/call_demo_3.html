@@ -1,0 +1,14 @@
+<script>
+    var name = 'sachin';
+
+    function sayHello() {
+        console.log(`Hello ${this.name}`)
+    }
+    sayHello(); // inside sayHello() , this = window
+
+    let obj1 = { name: 'Deepak' }
+    let obj2 = { name: 'Rahul' }
+
+    sayHello.call(obj1); // inside sayHello() , this = obj1
+    sayHello.call(obj2); // inside sayHello() , this = obj2
+</script>
