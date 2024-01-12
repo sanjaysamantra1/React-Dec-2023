@@ -1,0 +1,17 @@
+<script>
+    let user = { name: 'sachin', age: 35, add: 'mumbai' };
+
+    let a = user.name;
+    let b = user.age; // ES-5
+    let c = user.add;
+    console.log(a, b, c);
+
+    let { name, age, add } = user; // ES-6
+    console.log(name, age, add);
+
+    let { p, q } = user; // ES-6
+    console.log(p, q);
+
+    let { name: x } = user; // ES-6
+    console.log(x);
+</script>

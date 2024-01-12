@@ -1,0 +1,24 @@
+<script>
+    function sum(a, b) {
+        console.log(a + b)
+    }
+    sum(2, 3);
+    // sum() can add only 2 numbers
+
+    // Write a function which can add any number of argument
+    function add(...arg) { // REST Parameter
+        let sum = 0;
+        for (ele of arg) {
+            sum += ele;
+        }
+        console.log(sum)
+    }
+    add(2, 3)
+    add(1, 2, 3)
+    add(1, 2, 3, 4)
+    add(1, 2, 3, 4, 5)
+
+    // ... inside a function definition - Rest parameter
+    // ... while calling a function , with array copy , object copy - spread
+
+</script>

@@ -1,0 +1,21 @@
+<script>
+    function test1() {
+        if (5 == 5) {
+            (function () {
+                var name = 'sachin'
+                console.log('inside block: ' + name);
+            })();
+        }
+        console.log('outside block: ' + name);
+    }
+    test1();
+
+    function test2() {
+        {
+            let name = 'sachin'
+            console.log('inside block: ' + name);
+        }
+        console.log('outside block: ' + name);
+    }
+    test2();
+</script>

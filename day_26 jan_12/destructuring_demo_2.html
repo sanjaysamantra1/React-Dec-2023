@@ -1,0 +1,28 @@
+<script>
+    let user = {
+        "id": 2,
+        "name": "Ervin Howell",
+        "username": "Antonette",
+        "email": "Shanna@melissa.tv",
+        "address": {
+            "street": "marathalli",
+            "state": "karnataka",
+            "city": "bangalore",
+            "pin": "123456"
+        },
+        "phone": "010-692-6593 x09125",
+        "website": "anastasia.net",
+        "company": {
+            "name": "Deckow-Crist",
+            "catchPhrase": "Proactive didactic contingency",
+            "bs": "synergize scalable supply-chains"
+        }
+    }
+    console.log(user.address.street);
+    console.log(user.address.state);
+    console.log(user.address.city);
+    console.log(user.address.pin);
+
+    let { street, state, city } = user.address;
+    console.log(street, state, city); // Object De-structuring
+</script>
