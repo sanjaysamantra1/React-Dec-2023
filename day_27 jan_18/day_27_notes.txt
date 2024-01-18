@@ -1,0 +1,27 @@
+11. arrow functions
+12. From apply() to the spread operator (...)
+13. Enhanced Object Literals
+14. From constructors to classes
+15. inheritance - class,extends
+16. Modules
+17. collection-Map,Set
+18. promise and async-await
+19. generators
+20. Tail Calls
+
+
+Module Systems
+==============
+1. CommonJS     ( module.exports , require)
+2. ECMASCRIPT   (  export , import)
+3. AMD
+4. UMD
+
+
+object vs map
+-------------
+1. object keys must be strings/symbol, where as map keys can be of any type.
+2. we can get the size of a Map easily.  ex: map.size
+   for object size has to be calculated manually. ex: Object.keys(obj).length
+3.The iteration of maps is in insertion order of the elements
+4.Objects are not inherently iterable (Object.keys() is slow), Maps are iterable.
